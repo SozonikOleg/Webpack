@@ -6,7 +6,6 @@ module.exports = (env) => {
     mode: env.mode,
     entry:{
         helloWorld:   path.resolve(__dirname, 'src/index.js'),
-        // helloWorld2:   path.resolve(__dirname, 'src/index2.js'),
     },
     output: {
         filename: 'main.js',
