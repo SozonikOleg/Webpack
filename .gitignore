@@ -9,6 +9,8 @@ node_modules/
 
 # Ignore all files in a directory
 /public
+/dist
+/.idea
 
 # Ignore a specific file with a certain extension
 *.zip
