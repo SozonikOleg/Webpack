@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("Helllo"),console.log(6)})();
+({156:function(){var t=this&&this.__spreadArray||function(t,n,r){if(r||2===arguments.length)for(var e,l=0,c=n.length;l<c;l++)!e&&l in n||(e||(e=Array.prototype.slice.call(n,0,l)),e[l]=n[l]);return t.concat(e||Array.prototype.slice.call(n))};console.log(function n(r){return 0===r.length?0:r[r.length-1]>=10?r[r.length-1]+n(t([],r.slice(0,-1),!0)):n(t([],r.slice(0,-1),!0))}([1,2,3,10,30,40]))}})[156]();
