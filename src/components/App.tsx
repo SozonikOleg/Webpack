@@ -1,8 +1,15 @@
 import React from 'react';
-import './App.scss'
+import * as styles from './App.module.scss'
 
 export const App = () => {
-    return <div> <button>
-        <span>Click</span>
-      </button></div>
+
+    // console.log("classes", classes)
+
+    return <div >
+        <button className={styles.button}>
+        lololol
+      </button>
+    <p >PPPPP</p>
+
+    </div>
 }
