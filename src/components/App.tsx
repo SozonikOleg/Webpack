@@ -1,15 +1,19 @@
 import React from 'react';
+import {Link, Outlet } from 'react-router-dom';
 import * as styles from './App.module.scss'
 
 export const App = () => {
-
-    // console.log("classes", classes)
-
     return <div >
+        <div>
+            <Link to={'/about'}>about</Link>
+            <br/>
+            <Link to={'/shop'}>shop</Link>
+        </div>
+        <br/>
         <button className={styles.button}>
         lololol
       </button>
-    <p >PPPPP</p>
-
+        <br/>
+    <Outlet />
     </div>
 }

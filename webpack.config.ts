@@ -60,7 +60,8 @@ export default (env: EnvVariables) => {
         devtool: 'inline-source-map',
         devServer: {
             port: env.port?? 5000,
-            open: true
+            open: true,
+            historyApiFallback: true
         }
 }
 return config;
