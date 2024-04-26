@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link, Outlet } from 'react-router-dom';
 import * as styles from './App.module.scss'
+import { About }  from '@/pages/About'
 
 export const App = () => {
     return <div >

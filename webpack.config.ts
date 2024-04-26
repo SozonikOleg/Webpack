@@ -15,8 +15,6 @@ interface EnvVariables {
 export default (env: EnvVariables) => {
     const isDev = env.mode === 'development'
 
-    console.log("isDev", isDev)
-
     const config: webpack.Configuration = {
         mode: env.mode,
     entry:{
@@ -58,6 +56,9 @@ export default (env: EnvVariables) => {
         },
         resolve: {
             extensions: ['.tsx', '.ts', '.js'],
+            alias: {
+                '@': path.resolve(__dirname, 'src')
+            },
         },
         devtool: 'inline-source-map',
         devServer: {
