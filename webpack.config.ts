@@ -2,6 +2,7 @@ import * as path from 'path';
 import * as webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import {BundleAnalyzerPlugin}  from 'webpack-bundle-analyzer';
 import type { Configuration as DevServerConfiguration } from "webpack-dev-server";
 
 type Mode =   'none' | 'development' | 'production';
@@ -33,6 +34,7 @@ export default (env: EnvVariables) => {
                 filename: 'css/[name].[contenthash:8].css',
                 chunkFilename: 'css/[name].[contenthash:8].css',
             }),
+            new BundleAnalyzerPlugin(),
         ],
         module: {
             rules: [
